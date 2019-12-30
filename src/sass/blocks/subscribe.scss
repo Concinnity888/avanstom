@@ -1,0 +1,96 @@
+.subscribe {
+    height: 100%;
+    align-items: center;
+}
+
+.subscribe__btn {
+    display: inline-block;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    padding-left: 68px;
+    padding-right: 10px;
+    box-sizing: border-box;
+
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 80px;
+    vertical-align: middle;
+    text-decoration: none;
+
+    color: #FFFFFF;
+    background-color: transparent;
+    background-repeat: no-repeat;
+
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+
+    &--talk {
+        background-image: url('../img/icon-talk.svg');
+        background-position: center left;
+    }
+
+    &--date {
+        background-image: url('../img/icon-date.svg');
+        background-position:  center left 22px;
+    }
+
+    &:hover {
+        opacity: 0.75;
+    }
+}
+
+.subscribe__form {
+    width: 544px;
+    height: 80px;
+    margin-left: 20px;
+    padding: 8px;
+    box-sizing: border-box;
+
+    font-size: 0;
+
+    background-color: #1C8E92;
+    border-radius: 8px;
+}
+
+.subscribe__form input {
+    position: relative;
+
+    display: inline-block;
+    width: calc(100% - 190px);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-left: 78px;
+    box-sizing: border-box;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 80px;
+    vertical-align: middle;
+
+    color: #FFFFFF;
+    border: none;
+    background-color: transparent;
+    outline: none;
+
+    background-image: url('../img/icon-mail.svg');
+    background-position: left 30px center;
+    background-repeat: no-repeat;
+
+    &::placeholder {
+        color: #FFFFFF;
+        opacity: 0.56;
+    }
+}
+
+.subscribe__form-btn {
+    width: 190px;
+
+    border-radius: 8px;
+}

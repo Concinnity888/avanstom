@@ -1,0 +1,18 @@
+.menu {
+    position: absolute;
+
+    z-index: 11;
+
+    top: 80px;
+    left: -22.5px;
+
+    display: none;
+    width: 1357px;
+    min-height: 584px;
+
+    background-color: #00A99D;
+
+    &--open {
+        display: block;
+    }
+}

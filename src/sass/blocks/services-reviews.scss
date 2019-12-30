@@ -1,0 +1,33 @@
+.services-reviews {
+    position: relative;
+
+    padding-bottom: 113px;
+}
+
+.services-reviews__title {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.services-reviews__pagination {
+    top: 25px;
+    right: -4px;
+    left: auto;
+
+    width: 100px;
+
+    & .swiper-pagination-bullet {
+        margin: 0 4px;
+    }
+}
+
+.services-reviews__button-next {
+    top: 235px;
+}

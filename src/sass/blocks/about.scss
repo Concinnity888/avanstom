@@ -1,0 +1,156 @@
+.about {
+    padding-bottom: 35px;
+}
+
+.about__title {
+    margin: 0;
+    margin-bottom: 29px;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 130%;
+
+    color: #000000;
+}
+
+.about__text {
+    max-width: 730px;
+    margin: 0;
+    margin-bottom: 77px;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #000000;
+    opacity: 0.75;
+
+    & b {
+        font-weight: bold;
+    }
+}
+
+.abount__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #000000;
+}
+
+.abount__wrap {
+    margin-bottom: 45px;
+
+    column-width: 528px;
+    column-count: 2;
+    column-gap: 144px;
+}
+
+.abount__wrap p {
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #333333;
+    opacity: 0.8;
+
+    &:nth-last-of-type(1) {
+        margin-bottom: 0;
+    }
+}
+
+.about__list {
+    margin: 0;
+    margin-bottom: 82px;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    list-style-position: outside;
+
+    color: #4B4B4B;
+
+    &--none {
+        padding: 0 95px;
+
+        list-style: none;
+    }
+
+    &--margin {
+        margin-bottom: 0;
+    }
+}
+
+.about__list-item {
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+    padding-left: 26px;
+
+    &:nth-last-of-type(1) {
+        margin-bottom: 0;
+    }
+
+    &--margin {
+        margin-left: 18px;
+    }
+
+    &--type-blue {
+        position: relative;
+
+        padding-left: 42px;
+
+        &::before {
+            content: '';
+
+            position: absolute;
+
+            top: 50%;
+            left: 2px;
+            transform: translateY(-50%);
+
+            width: 8px;
+            height: 8px;
+
+            background-color: #00A99D;
+            border-radius: 50%;
+        }
+    }
+}
+
+.abount__wrap h3 {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #4B4B4B;
+}
+

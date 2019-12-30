@@ -1,0 +1,42 @@
+.slider-cert {
+    padding-top: 112px;
+    padding-bottom: 115px;
+
+    &--margin {
+        margin-bottom: 113px;
+    }
+}
+
+.slider-cert__container {
+    position: relative;
+}
+
+.slider-cert__container .slider__swiper-pagination {
+    top: 25px;
+    right: -4px;
+    left: auto;
+
+    width: 100px;
+}
+
+.slider-cert__title {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.slider-cert__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 307px;
+    height: 227px;
+
+    background-color: #FFFFFF;
+}

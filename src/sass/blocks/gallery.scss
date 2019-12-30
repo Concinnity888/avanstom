@@ -1,0 +1,25 @@
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 117px;
+    overflow: hidden;
+
+    border-radius: 8px 8px 0 0;
+}
+
+.gallery__col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 432.39px;
+    height: 423.91px;
+}
+
+.gallery__photo-01,
+.gallery__photo-07 {
+    margin-bottom: 5px;
+}
+
+.gallery__photo-06 {
+    margin-top: 5px;
+}

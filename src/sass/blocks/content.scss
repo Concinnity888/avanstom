@@ -1,0 +1,13 @@
+.content {
+    margin-bottom: 116px;
+    padding-bottom: 129px;
+
+    background-color: #FFFFFF;
+    border-radius: 0 0 16px 16px;
+
+    &--border-radius {
+        padding-bottom: 80px;
+
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,143 @@
+.offers {
+    margin-bottom: 113px;
+    padding-top: 112px;
+    padding-bottom: 113px;
+}
+
+.offers__inners {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 334px;
+    overflow: hidden;
+
+    border-radius: 20px;
+}
+
+.offers__item {
+    display: flex;
+    height: 100%;
+    padding-left: 155px;
+}
+
+.offers__wrap {
+    max-width: 350px;
+
+    &--medium {
+        max-width: 650px;
+    }
+
+    &--small {
+        max-width: 260px;
+        margin-right: auto;
+    }
+}
+
+.offers__item-01 {
+    grid-row: span 2;
+    grid-column: span 1;
+    padding-top: 98px;
+    padding-bottom: 100px;
+
+    background-color: #FFFFFF;
+    background-image: url('../img/offers/offers-01.jpg');
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.offers__item--small {
+    padding-left: 0;
+    padding: 19px 0;
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.offers__item-02 {
+    background-image: linear-gradient(91.04deg, #00BBAE 10.04%, #A6E6DB 107.71%);
+}
+
+.offers__item-03 {
+    background-image: linear-gradient(91.04deg, #FFD5A0 33.95%, #FCD538 107.71%);
+}
+
+.offers__item-photo {
+    position: relative;
+
+    display: block;
+    width: 185px;
+    height: 129px;
+    margin-right: 15px;
+    overflow: hidden;
+
+    &:nth-last-of-type(1) {
+        margin-right: 0;
+    }
+}
+
+.offers__item-photo img {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.offers__item-title {
+    margin: 0;
+    margin-bottom: 14px;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #333333;
+
+    &--margin {
+        margin-bottom: 24px;
+    }
+
+    &--margin-top {
+        margin-top: 19px;
+    }
+}
+
+.offers__item-text {
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #333333;
+}
+
+.offers__btn-play {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-right: 65px;
+    margin-top: 18px;
+
+    font-size: 0;
+
+    background-color: #8FD5BD;
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+
+    background-image: url('../img/intro/icon-play.svg');
+    background-position: center left 44px;
+    background-repeat: no-repeat;
+
+    &:hover {
+        opacity: 0.75;
+    }
+}

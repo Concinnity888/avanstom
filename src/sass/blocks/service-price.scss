@@ -1,0 +1,322 @@
+.service-price {
+    padding: 0 62px;
+    padding-top: 116px;
+    padding-bottom: 113px;
+    box-sizing: border-box;
+
+    &--padding-none {
+        padding: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &--padding {
+        padding-top: 55px;
+    }
+
+    &--padding:nth-of-type(1) {
+        padding-bottom: 0;
+    }
+}
+
+.service-price__title {
+    margin: 0;
+    margin-bottom: 72px;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+
+    &--margin {
+        margin-bottom: 50px;
+    }
+}
+
+.service-price__block-white {
+    margin-bottom: 32px;
+    padding-top: 15px;
+
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.service-price__table {
+    margin: 0 48px;
+
+    border-collapse: collapse;
+
+    &--white {
+        margin: 0 136px;
+    }
+
+    &--margin {
+        margin-bottom: 32px;
+    }
+}
+
+.service-price__table-row {
+    display: flex;
+    width: 1095px;
+
+    border: none;
+    border-bottom: 1px solid #E8E8E8;
+
+    &--border-none {
+        border-bottom: none;
+    }
+
+    &--width {
+        width: 1039px;
+    }
+}
+
+.service-price__table-data {
+    display: block;
+
+    &--first {
+        width: 635px;
+        padding: 30px 0;
+    }
+
+    &--second {
+        width: 300px;
+        padding: 30px 25px;
+        box-sizing: border-box;
+
+        text-align: right;
+    }
+
+    &--action {
+        padding: 14px 25px;
+    }
+}
+
+.service-price__table input[type="checkbox"] {
+    display: none;
+}
+
+.service-price__table input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    padding-left: 57px;
+
+    cursor: pointer;
+}
+
+.service-price__table input[type="checkbox"] + label::before {
+    content: '';
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 24px;
+    height: 24px;
+
+    border: 2px solid rgba(75, 75, 75, 0.8);
+    box-sizing: border-box;
+}
+
+.service-price__table input[type="checkbox"]:checked + label::after {
+    content: '';
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url('../img/icon-check.png');
+    background-repeat: no-repeat;
+    background-color: #00A99D;;
+    background-position: center;
+}
+
+.service-price__table-caption {
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+
+    & span {
+        display: inline-block;
+        height: 24px;
+        margin-top: -6px;
+        margin-left: 28px;
+        padding: 0 9px;
+
+        font-size: 14px;
+        line-height: 24px;
+        vertical-align: middle;
+
+        background-color: #FF7A00;;
+        color: #FFFFFF;
+    }
+}
+
+.service-price__table-text {
+    margin: 0;
+    margin-left: 57px;
+    margin-top: 20px;
+    padding: 0;
+    padding-right: 5px;
+    box-sizing: border-box;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #333333;
+
+    &--margin-none {
+        margin-left: 0;
+    }
+}
+
+.service-price__table del {
+    margin: 0;
+    margin-right: 12px;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+    text-decoration: none;
+
+    color: rgba(33, 53, 64, 0.5);
+    opacity: 0.4;
+}
+
+.service-price__value {
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.service-price__table small {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: right;
+
+    color: #333333;
+    opacity: 0.4;
+}
+
+.service-price__table-link {
+    padding-top: 22px;
+    padding-left: 25px;
+    box-sizing: border-box;
+}
+
+.service-price__table-link a {
+    position: relative;
+
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-right: 48px;
+
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-decoration: none;
+
+    color: #00A99D;
+
+    &::before {
+        content: '';
+        position: absolute;
+
+        top: 0;
+        right: 0;
+
+        width: 22px;
+        height: 40px;
+
+        background-image: url('../img/icon-arrow-link.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.service-price__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.service-price__count {
+    margin: 0;
+    margin-right: auto;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 34px;
+
+    color: #8D8D8D;
+
+    & span {
+        margin-left: 13px;
+
+        font-weight: bold;
+        font-size: 20px;
+
+        color: #00A99D;
+    }
+}
+
+.service-price__total-value {
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 34px;
+
+    color: #8D8D8D;
+
+    & span {
+        margin-left: 11px;
+
+        font-weight: bold;
+        font-size: 24px;
+
+        color: #000000;
+    }
+}
+
+.service-price__btn {
+    margin-right: 48px;
+}
+

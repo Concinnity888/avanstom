@@ -1,0 +1,96 @@
+.doctor-reviews {
+    position: relative;
+
+    margin-bottom: 113px;
+}
+
+.doctor-reviews__title {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.doctor-reviews__container {
+    margin-bottom: 24px;
+}
+
+.doctor-reviews__pagination {
+    top: 25px;
+    right: -4px;
+    left: auto;
+
+    width: 100px;
+
+    & .swiper-pagination-bullet {
+        margin: 0 4px;
+    }
+}
+
+.doctor-reviews__count {
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 56px;
+    text-align: center;
+
+    color: rgba(75, 75, 75, 0.8);
+}
+
+.doctor-reviews__content-btn {
+    position: relative;
+
+    width: 416px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+
+    text-align: center;
+
+    background-color: transparent;
+    background-image: url('../img/review-01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+
+    cursor: pointer;
+
+    &::before {
+        content: '';
+
+        position: absolute;
+
+        top: -77px;
+        right: -72px;
+
+        width: 167px;
+        height: 167px;
+
+        background-color: #8FD5BD;
+        background-image: url('../img/intro/icon-play.svg');
+        background-position: bottom 40px right 98px;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+    }
+}
+
+.doctor-reviews__content-btn-02 {
+    background-image: url('../img/review-02.jpg');
+    background-size: cover;
+}
+
+.doctor-reviews__content-btn-03 {
+    background-image: url('../img/review-03.jpg');
+    background-size: cover;
+}
+

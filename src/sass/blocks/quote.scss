@@ -1,0 +1,113 @@
+.quote {
+    position: relative;
+
+    display: grid;
+    min-width: 0;
+    width: 1024px;
+    min-height: 0;
+    margin: 0 auto;
+    margin-bottom: 87px;
+    grid-template-rows: 30px max-content 10px auto 30px;
+    grid-template-columns: 37px 175px 1fr 37px;
+    grid-column-gap: 60px;
+
+    background-color: #F6F6F6;
+    border-radius: 8px;
+
+    &--margin {
+        margin-bottom: 115px;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+
+        position: absolute;
+
+        width: 80px;
+        height: 80px;
+        box-sizing: border-box;
+
+        background-color: #F6F6F6;
+        border: 8px solid #FFFFFF;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &::before {
+        top: -40px;
+        left: 36px;
+
+        background-image: url('../img/quote/icon-quote.png');
+    }
+
+    &::after {
+        bottom: -40px;
+        right: 36px;
+
+        background-image: url('../img/quote/icon-quote.png');
+    }
+}
+
+.quote__photo {
+    grid-row: 1 / 6;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    width: 175px;
+    height: 224px;
+}
+
+.quote__title {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+
+    color: #00A99D;
+}
+
+.quote__wrap {
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+    min-width: 0;
+    margin: 0;
+}
+
+.quote__text {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    word-wrap: break-word;
+
+    color: #000000;
+}
+
+.quote__author {
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: rgba(75, 75, 75, 0.8);
+}

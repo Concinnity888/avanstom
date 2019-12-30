@@ -1,0 +1,158 @@
+.map {
+    position: relative;
+}
+
+.map iframe {
+    display: block;
+}
+
+.map__container {
+    position: absolute;
+
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 1312px;
+    height: 100%;
+}
+
+.map__info {
+    position: absolute;
+
+    width: 640px;
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+    border-radius: 8px;
+
+    &::after {
+        content: '';
+
+        position: absolute;
+
+        right: -19px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 0;
+        height: 0;
+
+        border-style: solid;
+        border-width: 19px 0 19px 19px;
+        border-color: transparent transparent transparent #FFFFFF;
+    }
+}
+
+.map__info-title {
+    margin: 0;
+    padding: 25px 38px;
+    padding-top: 29px;
+    box-sizing: border-box;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+
+    color: #000000;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.map__info-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.map__info-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0;
+    padding: 0 38px;
+    padding-top: 17px;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #BABABA;
+    border-bottom: 1px solid #E8E8E8;
+
+    &:nth-child(2n) {
+        padding-top: 31px;
+    }
+
+    & span,
+    & a {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 26px;
+        text-decoration: none;
+
+        color: #00A99D;
+    }
+
+    & span:nth-of-type(2) {
+        margin-top: 5px;
+    }
+
+    &:nth-of-type(2n) {
+        border-left: 1px solid #E8E8E8;
+    }
+}
+
+.map__info-btns {
+    display: flex;
+    padding: 39px 38px;
+    padding-bottom: 43px;
+    box-sizing: border-box;
+}
+
+.map__info-btns span {
+    margin: 0;
+    margin-right: auto;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #BABABA;
+}
+
+.map__info-btn {
+    display: inline-block;
+    margin: 0;
+    margin-right: 8px;
+    padding: 0 29px;
+    height: 43px;
+
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 43px;
+    vertical-align: middle;
+
+    background-color: #D8D9E1;
+    color: #000000;
+    border: none;
+
+    &--orange {
+        background-color: #FFAE60;
+        color: #FFFFFF;
+    }
+
+    &:nth-last-of-type(1) {
+        margin-right: 0;
+    }
+}

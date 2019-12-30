@@ -1,0 +1,136 @@
+.benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 518px;
+    margin-bottom: 123px;
+}
+
+.benefits__list {
+    margin: 0;
+    margin-left: auto;
+    margin-right: 117px;
+    padding: 0;
+
+    text-align: right;
+    list-style: none;
+    counter-reset: list1;
+
+    border-right: 2px dashed #E0E0EF;
+}
+
+.benefits__list-item {
+    position: relative;
+
+    max-width: 370px;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    padding-right: 65px;
+    box-sizing: border-box;
+
+    &:nth-last-of-type(1) {
+        margin-bottom: 0;
+    }
+
+    &::before {
+        content: counter(list1);
+
+        position: absolute;
+
+        top: 50%;
+        right: -28px;
+        transform: translateY(-50%);
+
+        display: inline-block;
+        width: 56px;
+        height: 56px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        font-family: inherit;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 53px;
+        vertical-align: middle;
+        text-align: center;
+        counter-increment: list1;
+
+        color: #00A99D;
+        background-color: #FFFFFF;
+        border: 4px solid #E6E6F2;
+        border-radius: 50%;
+        transition: all 0.5s ease-out;
+    }
+
+    &:hover {
+        &::before {
+            top: 0;
+            right: -43px;
+            transform: translateY(0);
+
+            width: 86px;
+            height: 86px;
+
+
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 86px;
+
+            color: #FFFFFF;
+            background-color: #00A99D;
+            border: none;
+            transition: all 0.25s ease-out;
+        }
+
+        & .benefits__subtitle {
+            margin-bottom: 15px;
+
+            font-weight: 500;
+            font-size: 24px;
+
+            color: #00A99D;
+        }
+
+        & .benefits__text {
+            display: inline;
+        }
+    }
+}
+
+.benefits__subtitle {
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+
+    color: #000000;
+    transition: all 0.25s ease-out;
+}
+
+.benefits__text {
+    display: none;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: rgba(75, 75, 75, 0.8);
+    transition: all 0.25s ease-out;
+}
+
+.benefits__photo {
+    border-radius: 8px;
+}

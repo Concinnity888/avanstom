@@ -1,0 +1,131 @@
+.description {
+    padding: 0 193px;
+    box-sizing: border-box;
+
+    &--white {
+        margin-bottom: 113px;
+        padding-top: 79px;
+
+        background-color: #FFFFFF;
+        border-radius: 16px;
+    }
+
+    &--margin {
+        position: relative;
+
+        margin-top: -15px;
+        padding-top: 94px;
+
+        border-radius: 0 0 16px 16px;
+    }
+}
+
+.description__title {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0 95px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.description__text {
+    margin: 0;
+    margin-bottom: 75px;
+    padding: 0 95px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    &--margin {
+        margin-bottom: 30px;
+    }
+
+    &--margin-middle {
+        margin-bottom: 35px;
+    }
+}
+
+.description__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0 95px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+
+    &--margin {
+        margin-bottom: 35px;
+    }
+}
+
+.description__list {
+    margin: 0;
+    margin-bottom: 90px;
+    padding: 0 112px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    list-style-position: outside;
+
+    color: #4B4B4B;
+
+    &--none {
+        padding: 0 95px;
+
+        list-style: none;
+    }
+
+    &--margin {
+        margin-bottom: 25px;
+    }
+}
+
+.description__list-item {
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+    padding-left: 26px;
+
+    &:nth-last-of-type(1) {
+        margin-bottom: 0;
+    }
+
+    &--type-blue {
+        position: relative;
+
+        padding-left: 42px;
+
+        &::before {
+            content: '';
+
+            position: absolute;
+
+            top: 50%;
+            left: 2px;
+            transform: translateY(-50%);
+
+            width: 8px;
+            height: 8px;
+
+            background-color: #00A99D;
+            border-radius: 50%;
+        }
+    }
+}
+
+.description__photo {
+    margin-bottom: 67px;
+}
